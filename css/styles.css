@@ -1,0 +1,215 @@
+/*  font-family: 'Slabo 27px', serif;
+
+    font-family: 'Pacifico', cursive;
+
+    font-family: 'Shadows Into Light', cursive;
+
+    font-family: 'Amatic SC', cursive;
+
+    font-family: 'Great Vibes', cursive;
+
+    font-family: 'Warnes', cursive;
+
+ */
+
+html{
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body{
+	/*display: block;*/
+	height:100%;
+	width: 100%;
+}
+
+
+.container{
+	display: block;
+	height: auto;
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
+
+/* Header
+------------*/
+
+header{
+	display: block;
+	height: auto;
+	width: auto;
+	background-image: url(../images/water.jpg);
+	background-size: cover;
+	position: relative;
+}
+
+
+
+h1{
+
+  font-weight: bold;
+  font-size-adjust: 200 rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  color: black;
+  padding-bottom: 50 px;
+font-family: "Warnes", Helvetica, sans-serif;
+color: rgba(255,255,255,1);
+text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de;
+
+
+}
+
+h1:hover{
+/*display: inline-block;*/
+  text-align: center;
+  color: black;
+  padding-bottom: 50 px;
+  font-family: "Warnes", Helvetica, sans-serif;
+  color: rgba(111,444,333,1);
+  text-shadow: 0 0 10px rgba(152,97,231,1) , 0 0 20px rgba(152,97,231,1) , 0 0 30px rgba(152,97,231,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de;
+
+}
+
+
+
+.first-stanza {
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 20px;
+	font-weight: bold;
+	animation: typing-text 2s steps(20), blink 0.5s infinite alternate;
+	overflow: hidden;
+	white-space: nowrap;
+}
+  
+/*.poem { 
+/* 	margin: auto;
+	padding: 20px 0;
+	text-align: left;
+	width: 390px; */
+	
+  
+  /*.poem p:first-letter {
+	 float: left; 
+  font-size: 38px;
+  line-height: 1;
+  margin: 2px 5px 0 0;
+	}
+p {
+	line-height: 1.5;
+	margin-bottom: 15px;
+	animation: typing-text 2s steps(20);
+	overflow: hidden;
+	white-space: nowrap;
+
+
+	}*/
+
+@-webkit-keyframes typing-text{
+	from {
+		width: 0;
+	}
+	to{
+		width: 885px;
+	}
+}
+  
+@-webkit-keyframes blink {
+	from{
+		border-color: transparent;
+	}
+	to {
+		border-color: #000
+	}
+}
+
+
+
+.scroll-up {
+ height: 500px;	
+ overflow: hidden;
+ position: relative;
+}
+
+
+.scroll-up p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+
+
+ /* Starting position */
+ -moz-transform:translateY(100%);
+ -webkit-transform:translateY(100%);	
+ transform:translateY(100%);
+
+
+ /* Apply animation to this element */	
+ -moz-animation: scroll-up 20s linear infinite;
+ -webkit-animation: scroll-up 20s linear infinite;
+ animation: scroll-up 20s linear infinite;
+}
+
+
+/* Move it (define the animation) */
+@-moz-keyframes scroll-up {
+ 0%   { -moz-transform: translateY(100%); }
+ 100% { -moz-transform: translateY(-100%); }
+}
+@-webkit-keyframes scroll-up {
+ 0%   { -webkit-transform: translateY(100%); }
+ 100% { -webkit-transform: translateY(-100%); }
+}
+@keyframes scroll-up {
+ 0%   { 
+ -moz-transform: translateY(100%); /* Browser bug fix */
+ -webkit-transform: translateY(100%); /* Browser bug fix */
+ transform: translateY(100%); 		
+ }
+50%   { 
+ -moz-transform: translateY(0%); /* Browser bug fix */
+ -webkit-transform: translateY(0%); /* Browser bug fix */
+ transform: translateY(0%); 		
+ }
+
+ 100% { 
+ -moz-transform: translateY(-100%); /* Browser bug fix */
+ -webkit-transform: translateY(-100%); /* Browser bug fix */
+ transform: translateY(-100%); 
+ }
+}
+
+
+.pop {
+	font-family: 'Great Vibes', cursive;
+	font-size: 70px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
